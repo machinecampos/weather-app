@@ -4,6 +4,9 @@ type Props = {}
 
 export default function Navbar({}: Props) {
   return (
-    <div>Navbar</div>
+    <nav className="shadow-sm sticky top-0 left-0 z-50 bg-white">
+        <div className="h-[80px] "></div>
+        Navbar
+    </nav>
   )
 }
