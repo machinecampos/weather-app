@@ -1,14 +1,10 @@
+import Navbar from "@/components/Navbar"
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <div>Hello yall
-        Whats fucking up?
-      </div>
-      <div>
-        Hey hey hey
-      </div>
+    <div className="flex flex-col gap-4 bg-gry-100 min-h-screen">
+      <Navbar />
     </div>
   );
 }
