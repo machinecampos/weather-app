@@ -33,12 +33,16 @@ export default function Home() {
       fill className="object-cover"
       alt="Landing photo" />
 
-      <div className="relative flex justify-between items-center max-w-[500px] w-full">
-        <form>
+      <div className="relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4 text-white z-10">
+        <form className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl">
           <div>
-            <input type="text" placeholder="Search city" />
+            <input 
+              onChange={(e)=> setCity(e.target.value)}
+              className="bg-transparent border-none text-white focus:outline-none text-2xl" type="text" placeholder="Search city" />
           </div>
-          <button onClick={fetchWeather}><BsSearch /></button>
+          <button onClick={fetchWeather}>
+            <BsSearch size={20} />
+          </button>
         </form>
       </div>
 
