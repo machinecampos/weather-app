@@ -34,7 +34,7 @@ export default function Home() {
       alt="Landing photo" />
 
       <div className="relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4 text-white z-10">
-        <form className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl">
+        <form onSubmit={fetchWeather} className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl">
           <div>
             <input 
               onChange={(e)=> setCity(e.target.value)}
