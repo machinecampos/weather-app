@@ -4,6 +4,7 @@ import Image from "next/image"
 import axios from "axios"
 import {useState} from "react"
 import {BsSearch} from "react-icons/bs"
+import Weather from "../components/Weather"
 
 export default function Home() {
 
@@ -45,6 +46,10 @@ export default function Home() {
           </button>
         </form>
       </div>
+
+      {/* Weather */}
+
+      {weather.main && <Weather data={weather} />}
 
     </div>
   );
