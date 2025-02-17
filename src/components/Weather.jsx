@@ -13,6 +13,7 @@ const Weather = ({data}) => {
                         width="100"
                         height="100"
                     />
+                    <p>{data.weather[0].main}</p>
                 </div>
             </div>
         </div>
