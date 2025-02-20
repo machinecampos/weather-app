@@ -4,7 +4,7 @@ import Image from "next/image"
 const Weather = ({data}) => {
     console.log(data)
     return (
-        <div>
+        <div className="relative">
             <div>
                 <div>
                     <Image 
