@@ -15,7 +15,7 @@ const Weather = ({data}) => {
                     />
                     <p className="text-2xl">{data.weather[0].main}</p>
                 </div>
-                <p>{data.main.temp.toFixed(0)}&#176;</p>
+                <p className="text-9xl">{data.main.temp.toFixed(0)}&#176;</p>
             </div>
         </div>
     )
